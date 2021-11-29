@@ -1,0 +1,73 @@
+.main-content__div { 
+    padding: 1rem; 
+    background-image: linear-gradient(
+        white 0%,
+        $verde 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .main-content__sections {
+        background-color: $amarillo;
+        margin: 0 1em;
+        padding: 1em;
+
+    }
+    .word-guess__section {
+        display: inline-block;
+        font-size: 2em;
+        padding: 1rem 3rem;
+        letter-spacing: .5rem;
+        // align-items: center;
+        // justify-content: center;
+        // flex: 2 1 auto;
+
+        .word-guess__p {
+        }
+    }
+    .scoreboard__section {
+        line-height: .75em;
+        font-size: .75em;
+        margin: 0 1em;
+        // flex: 1 1 auto;
+        .scoreboard__div--score-and-btn {
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .reset__button {
+            background-color: $morado;
+            color: white;
+            font-size: .75em;
+        }
+        .scoreboard__div--second-remaining {
+            padding: .5em 3em;
+            background-color: $verde;
+            white-space: nowrap;
+        }
+        .seconds-remaining__p {
+            color: white;
+            text-align: center;
+        }
+        .seconds-remaining__p--number {
+            font-size: 2em;
+            color: white;
+        }
+        .seconds-remaining__p--text {
+            font-size: .75em;
+        }
+    }
+    @media (max-width: $telefono) {
+        font-size: .6em;
+    }
+    @include tablet {
+        font-size: 1.4em
+    }
+    @include laptop {
+        font-size: 1.6em;
+    }
+    @include desktop {
+        font-size: 1.8em;
+    }
+}

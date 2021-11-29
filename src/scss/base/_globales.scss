@@ -16,10 +16,9 @@ body {
     // }
 }
 p {
-    font-size: 2rem;
     color: $negro;
 }   
-.contenedor {
+.container {
     max-width: 120rem;
     width: 95%;
     margin: 0 auto;
@@ -52,4 +51,12 @@ a {
 a:hover {
     cursor: pointer;
 }
-    
+.button {
+    background-color: $amarillo;
+    border: none;
+    padding: .5em 2em;
+    border-radius: .5em;
+}
+.button:hover {
+    cursor: pointer;
+}

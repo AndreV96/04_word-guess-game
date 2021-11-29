@@ -11,7 +11,29 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-
+    <header class="header">
+        <h1>Word Guess Game</h1>
+        <button class="start__button button">Start</button>
+    </header>
+    <div class="main-content__div">
+        <section class="main-content__sections word-guess__section">
+            <p class="word-guess__p">J_v_ Scr___</p>
+        </section>
+        <section class="main-content__sections scoreboard__section">
+            <div class="scoreboard__div--score-and-btn" >
+                <div>
+                    <p>Wins: <span class="wins__span">0</span></p>
+                    <p>Losses: <span class="losses__span">0</span></p>
+                </div>
+                <button class="reset__button button">Reset Score</button>
+            </div>
+            <div class="scoreboard__div--second-remaining">
+                <p class="seconds-remaining__p seconds-remaining__p--number">10</p>
+                <p class="seconds-remaining__p seconds-remaining__p--text">seconds remaining</p>
+            </div>
+        </section>
+    </div>
+    
     <script src="build/js/app.js"></script>
 </body>    
 </html>
